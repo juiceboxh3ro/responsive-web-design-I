@@ -115,21 +115,29 @@ section#bottom {
 
 h1 { font-size: 2rem; }
 
+.services-header-img {
+  width: 80%;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+.services-header-img img { width: 100%; }
+
 .services {
+  width: 80%;
+  margin: 0 auto;
 	padding-bottom: 40px;
 	border-bottom: solid 1px black;
 	line-height: 1.5;
-	font-size: 1.1rem;
+  font-size: 1.1rem;
 }
 
-.services-header-img {
-	padding: 40px 0;
-	width: 100%;
-}
 
 /* center grid area */
 
 .container {
+  width: 80%;
+  margin: 0 auto;
 	display: flex;
 	justify-content: space-between;
 	align-content: space-between;
@@ -167,6 +175,8 @@ h2 { font-size: 1.5rem; }
 
 
 .container2 {
+  width: 80%;
+  margin: 0 auto;
 	padding: 40px 0;
 	display: flex;
 	justify-content: space-between;
@@ -175,7 +185,7 @@ h2 { font-size: 1.5rem; }
 .facts-left {
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
+	justify-content: space-evenly;
 	width: 48%;
 	line-height: 1.5;
 	font-size: 1.1rem;
@@ -311,9 +321,13 @@ footer {
   .services h1,
   .services p { margin: 0 35px; }
 
+  .services-header-img {
+    width: 100%;
+  }
+
   .design, .ux, .marketing, .web-dev, .ios-dev, .and-dev {
-    width: 80%;
-    margin-left: 35px;
+    width: 90%;
+    margin: 20px auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -332,7 +346,7 @@ footer {
   }
 
   .facts-left {
-    margin: 0 35px 40px;
+    margin: 40px 35px;
     width: 80%;
   }
 
