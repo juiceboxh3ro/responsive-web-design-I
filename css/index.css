@@ -1,3 +1,354 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+* { 
+  box-sizing: border-box;
+  font-family: 'Titillium Web', sans-serif;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Nav Bar */
+
+nav {
+  width: 80%;
+   margin: 40px auto;
+   display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+nav a {
+  padding: 0 20px;
+	color: #afafaf;
+	font-size: 1.2rem;
+	text-decoration: none;
+	font-weight: 600;
+}
+
+nav img { transition: 0.25s ease-in; }
+
+nav img:hover {
+	cursor: pointer;
+	transform: scale(1.2);
+}
+
+/* Header Section */
+
+header {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+  width: 80%;
+  margin: 0 auto;
+	padding: 4% 0;
+	border-bottom: 1px solid black;
+}
+
+#header-left {
+	display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#header-left h1 {
+	font-size: 5rem;
+	text-align: center;
+	padding-bottom: 10px;
+}
+
+#header-left #btn {
+	text-align: center;
+	padding: 2% 15%;
+	border: 1px solid black;
+}
+
+#header-left #btn:hover { cursor: pointer; }
+
+/* First Section */
+
+section#top {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+	padding: 30px 0;
+}
+
+section#top #features { margin-right: 100px; }
+
+/* Middle Banner */
+
+#middle-banner {
+  width: 80%;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+#middle-banner img { width: 100%; }
+
+/* Second Section */
+
+section#bottom {
+  width: 80%;
+  margin: 0 auto;
+	display: flex;
+	padding: 35px 0;
+	border-bottom: 1px solid black;
+}
+
+#services, #product { margin-right: 10px; }
+
+/* Contact */
+
+#contact {
+  width: 80%;
+  margin: 40px auto;
+}
+
+/* SERVICES CSS */
+
+h1 { font-size: 2rem; }
+
+.services-header-img {
+  width: 80%;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+.services-header-img img { width: 100%; }
+
+.services {
+  width: 80%;
+  margin: 0 auto;
+	padding-bottom: 40px;
+	border-bottom: solid 1px black;
+	line-height: 1.5;
+  font-size: 1.1rem;
+}
 
 
+/* center grid area */
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-content: space-between;
+	flex-wrap: wrap;
+	padding-bottom: 40px;
+	border-bottom: 2px solid black;
+}
+
+h2 { font-size: 1.5rem; }
+
+.design, .ux, .marketing, .web-dev, .ios-dev, .and-dev {
+	width: 48%;
+	border: 1px solid black;
+	background-color: #f4f4f4;
+	padding: 30px;
+	margin-top: 40px;
+	line-height: 1.5;
+	font-size: 1.1rem;
+}
+
+.btn {
+	width: 33%;
+	margin-top: 20px;
+	padding: 10px 5px;
+	border: 1px solid black;
+	border-radius: 5px;
+	text-align: center;
+	font-size: 0.8rem;
+}
+
+.btn:hover {
+	cursor: pointer;
+	background-color: #fff;
+}
+
+
+.container2 {
+  width: 80%;
+  margin: 0 auto;
+	padding: 40px 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+.facts-left {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	width: 48%;
+	line-height: 1.5;
+	font-size: 1.1rem;
+}
+
+.facts-left ul li {
+	line-height: 2;
+	list-style-position: inside;
+	list-style-type: square;
+}
+
+.facts-right { width: 48%; }
+
+.facts-right img { width: 100%; }
+
+/* Footer */
+
+footer {
+	display: flex;
+	justify-content: center;
+	margin: 50px auto 50px auto;
+	font-size: 1.1rem;
+}
+
+/* iPad & tablets */
+@media(min-width: 376px) and (max-width: 768px) {
+
+  /* Common */
+
+  nav {
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    width: 100%;
+    height: 15vw;
+  }
+
+  nav a { margin: 0 auto; }
+
+  /* Main Only */
+
+  header { justify-content: center; }
+
+  #header-right { display: none; }
+
+  #header-left {
+    width: 80%;
+    padding: 0;
+    justify-content: center;
+  }
+
+  #header-left #btn { width: 50%; }
+
+  /* Services */
+
+  .services h1,
+  .services p { margin: 0 35px; }
+
+  .design, .ux, .marketing, .web-dev, .ios-dev, .and-dev {
+    width: 80%;
+    margin-left: 35px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container2 { flex-direction: column; }
+
+  .facts-right {
+    margin: 0 35px;
+    width: 80%;
+  }
+
+  .facts-left {
+    margin: 0 35px 40px;
+    width: 80%;
+  }
+
+  .facts-left ul { margin-top: 30px; }
+}
+
+/* smartphones */
+@media(max-width: 375px) {
+  nav {
+    flex-direction: column;
+    margin-bottom: 20px;
+    text-align: center;
+    width: 100%;
+  }
+
+  nav a:nth-child(1) { order: 2; }
+  nav a:nth-child(2) { order: 3; }
+  nav a:nth-child(3) { order: 4; }
+  nav a:nth-child(4) { order: 5; }
+  nav a:nth-child(5) { order: 6; }
+  nav a:nth-child(6) { order: 7; }
+  nav a:nth-child(7) { order: 1; }
+
+  nav a {
+    padding: 10px;
+    border-bottom: 2px solid gray;
+    width: 100%;
+  }
+
+  #header-left {
+    width: 80%;
+    padding: 0;
+    margin-bottom: 50px;
+  }
+
+  #header-left h1 {
+    font-size: 15vw;
+  }
+
+  #header-left #btn {
+    width: 75%;
+  }
+
+  #header-right { display: none; }
+
+  section#top {
+    flex-direction: column;
+  }
+  
+  section#top #features { margin: 0 0 25px; }
+
+  section#bottom {
+    flex-direction: column;
+    margin-bottom: 25px;
+  }
+
+  #services, #product { margin: 0 0 25px; }
+
+  /* Services Page */
+  .services h1,
+  .services p { margin: 0 35px; }
+
+  .services-header-img {
+    width: 100%;
+  }
+
+  .design, .ux, .marketing, .web-dev, .ios-dev, .and-dev {
+    width: 90%;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .btn {
+    width: 80%;
+    align-self: center;
+  }
+
+  .container2 { flex-direction: column-reverse; }
+
+  .facts-right {
+    margin: 0 35px;
+    width: 80%;
+  }
+
+  .facts-left {
+    margin: 40px 35px;
+    width: 80%;
+  }
+
+  .facts-left ul { margin-top: 30px; }
+}
